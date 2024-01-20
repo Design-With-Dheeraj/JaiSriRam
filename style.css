@@ -292,7 +292,7 @@ html,body{
 @media screen and (max-width: 480px) {
     .main-head
     {
-        top: 50px;
+        top: 80px;
         font: 700 46px "clash display";
         letter-spacing: 6px;
         text-align: center;
