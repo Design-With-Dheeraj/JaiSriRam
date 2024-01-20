@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Sri Ram</title>
+    <link rel="icon" href="img/tab-logo.png" type="image">
+
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/a656fffa44.js" crossorigin="anonymous"></script>
+
+    <!-- Link AOS(Animate On Scroll) StyleSheet CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main">
+        <audio id="myAudio" src="ram-chanting-audio.mp3" loop autoplay></audio>
+        <div class="project-contain">
+            <div class="page-head-logo" data-aos="fade-down" data-aos-delay="800" data-aos-duration="600">
+                <img src="img/page-head-logo.png" alt="">
+                <button id="play-audio-btn" class="play-audio-btn" onclick="audioStart()"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="swipe-shape-contain">
+                <div class="swipe-shape" data-aos="flip-left" data-aos-duration="1000"></div>
+                <div class="swipe-shape" data-aos="flip-left" data-aos-duration="1000"></div>
+                <div class="swipe-shape" data-aos="flip-left" data-aos-duration="1000"></div>
+                <div class="swipe-shape" data-aos="flip-left" data-aos-duration="1000"></div>
+                <div class="swipe-shape" data-aos="flip-left" data-aos-duration="1000"></div>
+                <div class="swipe-shape" data-aos="flip-left" data-aos-duration="1000"></div>
+            </div>
+
+            <div class="main-head" data-aos="fade-down" data-aos-delay="800" data-aos-duration="1600">hanuman</div>
+
+            <div class="name-spiral-contain">
+                <img src="img/ram-chanting-png.png" alt="" class="spiral-img1" data-aos="zoom-in-up" data-aos-delay="800">
+                <img src="img/ram-chanting-png.png" alt="" class="spiral-img2" data-aos="zoom-in-up" data-aos-delay="1000">
+                <img src="img/ram-chanting-png.png" alt="" class="spiral-img3" data-aos="zoom-in-up" data-aos-delay="1200">
+                <img src="img/ram-chanting-png.png" alt="" class="spiral-img4" data-aos="zoom-in-up" data-aos-delay="1400">
+                <img src="img/ram-chanting-png.png" alt="" class="spiral-img5" data-aos="zoom-in-up" data-aos-delay="1600">
+            </div>
+
+            <div class="body-img">
+                <img src="img/hanuman-ji-png.png" alt="" data-aos="fade-up" data-aos-duration="1000">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script type="text/javascript">
+        function audioStart() {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+		    audio.currentTime = 0;
+        }
+    </script>
+
+    <!-- Link AOS(Animate On Scroll) Script CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>

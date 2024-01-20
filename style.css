@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Clash Display";
+    src: url("fonts/ClashDisplay_Complete/ClashDisplay-Regular.otf");
+	font-weight: 500;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-contain{
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(63, 63, 63);
+}
+
+.page-head-logo
+{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+.page-head-logo img
+{
+    width: 100px;
+    height: auto;
+}
+
+.page-head-logo .play-audio-btn
+{
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 135px;
+    background-color: #ff9900;
+    border: none;
+    box-shadow: 0 0 0 rgba(255,255,255, 0.8);
+    color: #000;
+    font-size: 20px;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0.8);
+    }
+    
+    70% {
+        box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+    }
+}
+
+
+.main-head
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+
+    font: 700 140px "clash display";
+    text-transform: uppercase;
+    letter-spacing: 50px;
+
+    display: flex;
+    justify-content: center;
+
+    color: #fff;
+    z-index: 0;
+}
+
+.project-contain .swipe-shape-contain
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    z-index: 0;
+}
+
+.swipe-shape-contain .swipe-shape
+{
+    width: 100%;
+    height: 100%;
+
+    background-color: #1d1d1d;
+}
+
+
+.name-spiral-contain img
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+
+    height: auto;
+}
+
+.spiral-img1
+{
+    width: 400px;
+    animation: spiral-clockWise 10s linear infinite;
+}
+
+.spiral-img2
+{
+    width: 330px;
+    animation: spiral-AnticlockWise 10s linear infinite;
+}
+
+.spiral-img3
+{
+    width: 260px;
+    animation: spiral-clockWise 10s linear infinite;
+}
+
+.spiral-img4
+{
+    width: 200px;
+    animation: spiral-AnticlockWise 10s linear infinite;
+}
+
+.spiral-img5
+{
+    width: 140px;
+    animation: spiral-clockWise 10s linear infinite;
+}
+
+@keyframes spiral-clockWise {
+    0%
+    {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes spiral-AnticlockWise {
+    0%
+    {
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+
+    100%
+    {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+.body-img
+{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.body-img img
+{
+    width: 460px;
+    height: auto;
+    animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%
+    {
+        transform: translateY(0);
+    }
+
+    60%
+    {
+        transform: translateY(-30px);
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .main-head
+    {
+        font: 700 140px "clash display";
+        letter-spacing: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-head
+    {
+        font: 700 60px "clash display";
+        letter-spacing: 10px;
+    }
+
+        
+    .spiral-img1
+    {
+        width: 60%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+
+    .spiral-img2
+    {
+        width: 50%;
+        animation: spiral-AnticlockWise 10s linear infinite;
+    }
+
+    .spiral-img3
+    {
+        width: 40%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+
+    .spiral-img4
+    {
+        width: 30%;
+        animation: spiral-AnticlockWise 10s linear infinite;
+    }
+
+    .spiral-img5
+    {
+        width: 20%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-head
+    {
+        font: 700 36px "clash display";
+        letter-spacing: 10px;
+    }
+
+        
+    .spiral-img1
+    {
+        width: 60%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+
+    .spiral-img2
+    {
+        width: 50%;
+        animation: spiral-AnticlockWise 10s linear infinite;
+    }
+
+    .spiral-img3
+    {
+        width: 40%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+
+    .spiral-img4
+    {
+        width: 30%;
+        animation: spiral-AnticlockWise 10s linear infinite;
+    }
+
+    .spiral-img5
+    {
+        width: 20%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-head
+    {
+        top: 50px;
+        font: 700 46px "clash display";
+        letter-spacing: 6px;
+        text-align: center;
+    }
+
+    .spiral-img1
+    {
+        width: 90%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+
+    .spiral-img2
+    {
+        width: 70%;
+        animation: spiral-AnticlockWise 10s linear infinite;
+    }
+
+    .spiral-img3
+    {
+        width: 50%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+
+    .spiral-img4
+    {
+        width: 30%;
+        animation: spiral-AnticlockWise 10s linear infinite;
+    }
+
+    .spiral-img5
+    {
+        width: 10%;
+        animation: spiral-clockWise 10s linear infinite;
+    }
+
+    .body-img
+    {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    
+    .body-img img
+    {
+        width: 360px;
+        height: auto;
+        animation: float 5s infinite ease-in-out;
+    }
+
+    .page-head-logo
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-head-logo img
+    {
+        width: 70px;
+        height: auto;
+    }
+
+    .page-head-logo .play-audio-btn
+    {
+        position: absolute;
+        left: 20px;
+
+        width: 50px;
+        height: 26px;
+        line-height: 28px;
+
+        font-size: 16px;
+    }
+}
