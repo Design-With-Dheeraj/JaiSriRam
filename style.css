@@ -177,6 +177,8 @@ html,body{
     }
 }
 
+
+
 .stone-contain img
 {
     position: absolute;
@@ -188,6 +190,7 @@ html,body{
 
     z-index: 1;
 }
+
 
 
 .body-img
@@ -226,11 +229,12 @@ html,body{
         letter-spacing: 20px;
     }
 
-	    
+    
     .stone-contain img
     {
         bottom: -250px;
     }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -271,7 +275,7 @@ html,body{
         animation: spiral-clockWise 10s linear infinite;
     }
 
-	.stone-contain img
+    .stone-contain img
     {
         bottom: -170px;
     }
@@ -315,7 +319,7 @@ html,body{
         animation: spiral-clockWise 10s linear infinite;
     }
 
-	    .stone-contain img
+    .stone-contain img
     {
         bottom: -80px;
     }
@@ -324,7 +328,7 @@ html,body{
 @media screen and (max-width: 480px) {
     .main-head
     {
-        top: 80px;
+        top: 70px;
         font: 700 46px "clash display";
         letter-spacing: 6px;
         text-align: center;
@@ -399,7 +403,8 @@ html,body{
 
         font-size: 16px;
     }
-	.stone-contain img
+
+    .stone-contain img
     {
         bottom: 0px;
     }
