@@ -232,6 +232,10 @@ html,body{
     
     .stone-contain img
     {
+	            position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 9;
         bottom: -250px;
     }
 
@@ -277,6 +281,10 @@ html,body{
 
     .stone-contain img
     {
+	            position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 9;
         bottom: -170px;
     }
 }
@@ -321,6 +329,10 @@ html,body{
 
     .stone-contain img
     {
+	            position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 9;
         bottom: -80px;
     }
 }
@@ -406,6 +418,10 @@ html,body{
 
     .stone-contain img
     {
+	            position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 9;
         bottom: 0px;
     }
 }
